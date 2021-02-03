@@ -1,7 +1,7 @@
 {
     "products":[
         {
-            "id": "movie1",
+            "_id": "movie1",
             "name": "The Dark Knight",
             "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice",
             "price": 189,
@@ -11,7 +11,7 @@
             "imageUrl": "/images/image_1.jpg"
         },
         {
-            "id": "movie2",
+            "_id": "movie2",
             "name": "Interstellar",
             "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
             "price": 169,
@@ -21,7 +21,7 @@
             "imageUrl": "/images/image_2.jpg"
         },
         {
-            "id": "movie3",
+            "_id": "movie3",
             "name": "Amelie",
             "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice",
             "price": 159,
@@ -31,7 +31,7 @@
             "imageUrl": "/images/image_3.jpg"
         },
         {
-            "id": "movie4",
+            "_id": "movie4",
             "name": "Modern Times",
             "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
             "price": 149,
@@ -41,7 +41,7 @@
             "imageUrl": "/images/image_4.jpg"
         },
         {
-            "id": "movie5",
+            "_id": "movie5",
             "name": "The Great Dictator",
             "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice",
             "price": 139,
@@ -51,7 +51,7 @@
             "imageUrl": "/images/image_5.jpg"
         },
         {
-            "id": "movie6",
+            "_id": "movie6",
             "name": "Dr.Stragelove",
             "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
             "price": 129,
