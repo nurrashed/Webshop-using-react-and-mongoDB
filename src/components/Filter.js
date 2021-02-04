@@ -13,11 +13,11 @@ class Filter extends Component {
                 <div className="filter-sort">
                     Order {" "} 
                     {/* <select value={this.props.price} onChange={this.props.sortProducts}> */}
-                    <select 
+                    <select  
                         value={this.props.price} 
                         onChange={(e)=>
                             this.props.sortProducts(
-                                this.props.products, 
+                                this.props.filteredProducts, 
                                 e.target.value
                             )
                         }
