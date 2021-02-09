@@ -1,10 +1,13 @@
 import React from "react";
 import { Provider } from "react-redux";
-import Cart from "./components/Cart";
-import Filter from "./components/Filter";
-import Products from "./components/Products";
+//import Cart from "./components/Cart";
+//import Filter from "./components/Filter";
+//import Products from "./components/Products";
 /* import data from "./data.json"; */
 import store from "./store";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import HomeScreen from './screens/HomeScreen';
+import AdminScreen from './screens/AdminScreen';
 
 class App extends React.Component {
   
@@ -93,31 +96,34 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="grid-container">
-          <header>
-            <a className="font-red" href="/">
-              React Shopping Cart
-            </a>
-          </header>
-          <main>
-            <div className="content">
-              <div className="main">
-                <Filter/>
-                <Products
-                  /* addToCart={this.addToCart} */
-                ></Products>
-              </div>
-              <div className="sidebar">
-                <Cart
-                  /* cartItems={this.state.cartItems}
-                  removeFromCart={this.removeFromCart}
-                  createOrder={this.createOrder} */
-                />
-              </div>
-            </div>
-          </main>
-          <footer>All right is reserved.</footer>
-        </div>
+        <BrowserRouter>
+          <div className="grid-container">
+            <header>
+              <Link className="font-red" to="/">React Shopping Cart</Link>
+              <Link className="font-red" to="/admin">Admin</Link>
+            </header>
+            <main>
+              <Route path="/admin" component={AdminScreen} />
+              <Route path="/" component={HomeScreen} exact />
+              {/* <div className="content">
+                <div className="main">
+                  <Filter/>
+                  <Products
+                    //addToCart={this.addToCart} 
+                  ></Products>
+                </div>
+                <div className="sidebar">
+                  <Cart
+                    //cartItems={this.state.cartItems}
+                    //removeFromCart={this.removeFromCart}
+                    //createOrder={this.createOrder} 
+                  />
+                </div>
+              </div> */}
+            </main>
+            <footer>All right is reserved.</footer>
+          </div>
+        </BrowserRouter>
       </Provider>
     );
   }
