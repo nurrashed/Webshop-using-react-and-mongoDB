@@ -86,7 +86,7 @@ class Cart extends Component {
                     <div>
                       {order.cartItems.map((x) => (
                         <div>
-                          {x.count} {" x "} {x.title}
+                          {x.count} {" x "} {x.name}
                         </div>
                       ))}
                     </div>

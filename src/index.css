@@ -43,6 +43,7 @@ header{
   grid-area: header;
   background-color: #141414;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: .5rem;
 }
@@ -321,3 +322,27 @@ input {
 /* .background{
   background-color: #141414;
 } */
+
+
+/* Orders */
+.orders {
+  width: 100%;
+  padding: 10px;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #140303;
+}
+td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+
+table{
+  border: 2px solid whitesmoke;
+}
+thead{
+  background-color: gray;
+}
+
